@@ -5,6 +5,29 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="Search.css">
+        <style>
+            input[type=text] {
+                width: 30%;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 20px;
+                font-size: 20px;
+                background-color: white;
+                background-position: 5px;
+                background-size: 24px 24px;
+                background-image: url(assets/iconfinder_icon-111-search_314807.png);
+                margin-bottom: 20px;
+                background-repeat: no-repeat;
+                text-indent: 30px;
+                font-weight: lighter;
+            }
+            input:focus,
+            select:focus,
+            textarea:focus,
+            button:focus {
+                outline: none;
+            }
+        </style>
     </head>
     <body>
         <div class="topnav">
@@ -18,14 +41,15 @@
                 <img src="assets/ImageSearch.png" style="margin-top: 10%; width: 20%;">
             </div>
             <form action="https://google.com/search" id="form_login" style="margin-top: 30px; border-radius: 20px;">
-                <div class="searchBar">
-                    <div>
-                        <img src="assets/searchIcon.png" alt="user-icon" style="width: 20px;">
-                        <input type="text" name="q">
-                    </div>
-                    <div style="margin-top: 50px">
-                        <input type="submit" value="Google Search" class="searchButton">
-                    </div>
+                <div>
+                    <!-- <img src="assets/searchIcon.png" alt="user-icon" style="width: 20px;"> -->
+                    <input type="text" name="q">
+                </div>
+                <div>
+                    <center>
+                        <input type="submit" value="Google Search" class="searchButton" >
+                        <input class="searchButton" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI" type="submit">
+                    </center>
                 </div>
             </form>
         </div>

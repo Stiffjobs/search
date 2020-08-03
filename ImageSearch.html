@@ -2,12 +2,49 @@
 <html lang="en">
     <head>
         <title>Image Search</title>
+        <link rel="stylesheet" href="ImageSearch.css">
     </head>
+    <style>
+        input[type=text] {
+                width: 25%;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                height: 35px;
+                border-radius: 20px;
+                font-size: 20px;
+                background-color: white;
+                background-position: 5px;
+                background-size: 24px 24px;
+                background-image: url(assets/iconfinder_icon-111-search_314807.png);
+                margin-bottom: 20px;
+                background-repeat: no-repeat;
+                text-indent: 30px;
+                font-weight: lighter;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+                outline: none;
+        }
+    </style>
     <body>
-        <form method="get" action="https://www.google.com/search">
-            <input type="text" name="q"/>
-            <input type="submit" value="Google Image Search">
-            <input name="tbm" value="isch" type="hidden">
-        </form>
+        <div class="topnav">
+            <div class="topnav-right">
+              <a href="Search.html">Google Search</a>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div>
+                <img src="assets/Screen Shot 2015-11-28 at 1.14.27 PM.png" style="margin-top: 5%; width: 25%;">
+            </div>
+            <form action="https://google.com/search" id="form_login" style="margin-top: 30px; border-radius: 20px;">
+                <div>
+                    <input type="text" name="q">
+                    <input type="hidden" name="tbm" value="isch">
+                    <button type="submit" style="border: 0; background: transparent; margin-left: -50px;"><img src="assets/blue search icon.png" alt="submit" width="20" height="20"></button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

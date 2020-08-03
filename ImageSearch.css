@@ -1,0 +1,55 @@
+.topnav {
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+.search-container {
+    background-color: #FFF;
+    position: relative;
+    border-radius: 30px;
+    padding: 3px 50px 3px 10px;
+}
+  .search-box {
+    background-color: transparent;
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+    border: 0;
+    width: 100%;
+}
+  .search-button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    background-color: #C00;
+    border-radius: 50%;
+    border: 0;
+    color: #FFF;
+    width: 35px;
+    height: 35px;
+    outline: 0;
+}
+#b { 
+    /* image replacement */
+     margin-top:8px;
+    width: 30px; 
+    height: 30px; 
+    background: gray url(assets/blue\ search\ icon.png) 0 0 no-repeat;
+ }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
